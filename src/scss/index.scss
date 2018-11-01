@@ -1,0 +1,47 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    background: #eee;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(45px);
+    padding: 0 pxTorem(15px);
+    @include box_flex;
+    @include justify(space-between);
+    @include align;
+    @include sizing;
+    font-size: pxTorem(16px);
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+section ul {
+    width: 100%;
+    height: pxTorem(100px);
+    padding: 0 pxTorem(30px);
+    @include box_flex;
+    @include sizing;
+    @include justify(space-between);
+    @include align;
+}
+
+dl {
+    width: 25%;
+    @include box_flex;
+    @include direction(column);
+    @include justify(space-between);
+    @include align;
+    img {
+        width: pxTorem(50px);
+        height: pxTorem(50px);
+    }
+}

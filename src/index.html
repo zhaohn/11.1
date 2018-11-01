@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span><</span>
+            <span>无连接</span>
+            <span>更多</span>
+        </header>
+        <section>
+            <ul>
+                <dl>
+                    <dt><img src="img/1.png" alt=""></dt>
+                    <dd>电源</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.png" alt=""></dt>
+                    <dd>首页</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.png" alt=""></dt>
+                    <dd>菜单</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/1.png" alt=""></dt>
+                    <dd>截屏</dd>
+                </dl>
+            </ul>
+            <div class="cont"></div>
+        </section>
+    </div>
+    <script>
+        var dls = document.querySelectorAll('dl');
+        var cont = document.querySelector('.cont');
+        for (var i = 0; i < dls.length; i++) {
+            dls[i].onclick = function() {
+                cont.innerHTML = "你好";
+            }
+        }
+    </script>
+</body>
+
+</html>
